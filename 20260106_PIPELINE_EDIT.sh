@@ -56,15 +56,15 @@ ls ./
 #E.coli
 #-----------------
 
-#curl -L -o genoma1.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR2597663/ERR2597663_1.fastq.gz
-#curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR2597663/ERR2597663_2.fastq.gz
+curl -L -o genoma1.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR2597663/ERR2597663_1.fastq.gz
+curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR2597663/ERR2597663_2.fastq.gz
 
 #----------------------
 # Salmonella enterica
 #----------------------
 
-curl -L -o genoma1.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR275/007/ERR2756787/ERR2756787_1.fastq.gz
-curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR275/007/ERR2756787/ERR2756787_2.fastq.gz
+#curl -L -o genoma1.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR275/007/ERR2756787/ERR2756787_1.fastq.gz
+#curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR275/007/ERR2756787/ERR2756787_2.fastq.gz
 
 #--------------------
 # Bacillus subtilis
