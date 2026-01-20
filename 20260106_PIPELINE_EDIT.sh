@@ -102,7 +102,7 @@ fastqc trimmomatic_clean/ERR024070_1.paired.fq.gz trimmomatic_clean/ERR024070_2.
 
 mkdir results_spades/
 
-spades.py -1 trimmomatic_clean/ERR024070_1.paired.fq.gz -2 trimmomatic_clean/ERR024070_2.paired.fq.gz -o results_spades -t 4 -m 8
+spades.py --isolate -1 trimmomatic_clean/ERR024070_1.paired.fq.gz -2 trimmomatic_clean/ERR024070_2.paired.fq.gz -o results_spades -t 4 -m 8
 
 #----------------------------------------------------------
 #VER LA CALIDAD DEL ENSAMBLADO UTILIZANDO BUSCO:
