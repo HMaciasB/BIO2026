@@ -56,8 +56,8 @@ ls ./
 #E.coli
 #-----------------
 
-curl -L -o genoma1.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR2597663/ERR2597663_1.fastq.gz
-curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR2597663/ERR2597663_2.fastq.gz
+#curl -L -o genoma1.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR2597663/ERR2597663_1.fastq.gz
+#curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR2597663/ERR2597663_2.fastq.gz
 
 #----------------------
 # Salmonella enterica
@@ -69,16 +69,16 @@ curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR259/003/ERR259
 #--------------------
 # Bacillus subtilis
 #--------------------
-#curl -L -o genoma1.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR162/009/ERR1620359/ERR1620359_1.fastq.gz
-#curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR162/009/ERR1620359/ERR1620359_2.fastq.gz
+curl -L -o genoma1.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR162/009/ERR1620359/ERR1620359_1.fastq.gz
+curl -L -o genoma2.fastq.gz ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR162/009/ERR1620359/ERR1620359_2.fastq.gz
 
 #--------------------------------------------------------
 # VER LA CALIDAD DE LA SECUENCIACIÓN CON FASTQC
 #--------------------------------------------------------
 
-mkdir fastqc
+#mkdir fastqc
 
-fastqc genoma1.fastq.gz genoma2.fastq.gz -o fastqc/
+#fastqc genoma1.fastq.gz genoma2.fastq.gz -o fastqc/
 
 #---------------------------------------------------------
 # Filtrado/Limpieza de lecturas crudas con TRIMMOMATIC
@@ -92,9 +92,9 @@ java -jar /usr/share/java/trimmomatic.jar PE -threads 4 -phred33 genoma1.fastq.g
 # VERIFICAR LIMPIEZA CON FASTQC
 #---------------------------------------------------------
 
-mkdir fastqc_clean
+#mkdir fastqc_clean
 
-fastqc trimmomatic_clean/ERR024070_1.paired.fq.gz trimmomatic_clean/ERR024070_2.paired.fq.gz -o fastqc_clean/
+#fastqc trimmomatic_clean/ERR024070_1.paired.fq.gz trimmomatic_clean/ERR024070_2.paired.fq.gz -o fastqc_clean/
 
 #----------------------------------------------------------
 #ENSAMBLAR UN GENOMA CON SPADES. (t) es el número de núcleos, y (m) es la cantidad de memoria RAM, ambos valores se pueden modificar
